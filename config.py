@@ -101,13 +101,22 @@ parserList = [
 '''
 DB_CONFIG = {
 
-    'DB_CONNECT_TYPE': 'sqlalchemy',  # 'pymongo'sqlalchemy;redis
-    # 'DB_CONNECT_STRING':'mongodb://localhost:27017/'
+    #sqllite db config
+    'DB_CONNECT_TYPE': 'sqlalchemy',
     'DB_CONNECT_STRING': 'sqlite:///' + os.path.dirname(__file__) + '/data/proxy.db'
-    # DB_CONNECT_STRING : 'mysql+mysqldb://root:root@localhost/proxy?charset=utf8'
 
-    # 'DB_CONNECT_TYPE': 'redis',  # 'pymongo'sqlalchemy;redis
-    # 'DB_CONNECT_STRING': 'redis://localhost:6379/8',
+    #mysql db config
+    #'DB_CONNECT_TYPE': 'sqlalchemy',
+    #'DB_CONNECT_STRING' : 'mysql+mysqldb://root:root@localhost/proxy?charset=utf8'
+
+    #mongodb db config
+    #'DB_CONNECT_TYPE': 'pymongo',
+    #'DB_CONNECT_STRING':'mongodb://localhost:27017/'
+
+    #redis db config
+    #'DB_CONNECT_TYPE': 'redis',
+    #'DB_CONNECT_STRING': 'redis://localhost:6379'
+
 
 }
 CHINA_AREA = ['河北', '山东', '辽宁', '黑龙江', '吉林'
